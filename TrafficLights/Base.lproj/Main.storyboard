@@ -65,6 +65,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Start">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="lightSwicher" destination="BYZ-38-t0r" eventType="touchUpInside" id="XI4-LP-AGi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,10 +84,16 @@
                             <constraint firstItem="pfI-03-ygv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="tew-ZA-cJx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="IYQ-uI-1uW" id="WWg-dj-Wuh"/>
+                        <outlet property="greenView" destination="sUD-oQ-ZGZ" id="YzV-MB-TC8"/>
+                        <outlet property="redView" destination="pfI-03-ygv" id="V6N-3Y-yvh"/>
+                        <outlet property="yellowView" destination="NbL-ZO-GTR" id="jjx-7F-4x9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+            <point key="canvasLocation" x="-279" y="86"/>
         </scene>
     </scenes>
     <resources>

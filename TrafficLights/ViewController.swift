@@ -23,25 +23,60 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func lightSwitching() {
+        
+//        if button.title(for: .normal) == "Start" {
+//            button.setTitle("Next", for: .normal)
+//            redView.alpha = 1
+//          return
+//        }
 
+        if redView.alpha == 1 {
+            redView.alpha = 0.3
+            yellowView.alpha = 1
+            return
+        }
+
+        if yellowView.alpha == 1 {
+            yellowView.alpha = 0.3
+            greenView.alpha = 1
+            return
+        }
+
+        if greenView.alpha == 1 {
+            greenView.alpha = 0.3
+            redView.alpha = 1
+            return
+        }
+        button.setTitle("Next", for: .normal)
+        redView.alpha = 1
+    }
+    
+    /*
     @IBAction func lightSwitcher() {
-        if button.title(for: .normal) == "Start" {
+        
+      if button.title(for: .normal) == "Start" {
             button.setTitle("Next", for: .normal)
             redView.alpha = 1
         }
+
         if redView.alpha == 1 {
             redView.alpha = 0.3
             yellowView.alpha = 1
         }
+
         if yellowView.alpha == 1 {
             yellowView.alpha = 0.3
             greenView.alpha = 1
         }
+
         if greenView.alpha == 1 {
             greenView.alpha = 0.3
             redView.alpha = 1
         }
-    }
-    
+
+    } */
 }
+    
 

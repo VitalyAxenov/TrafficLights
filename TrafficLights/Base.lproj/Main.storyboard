@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,50 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-03-ygv">
-                                <rect key="frame" x="137.66666666666666" y="69" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Q20-5K-XGT"/>
-                                    <constraint firstAttribute="height" constant="100" id="lsr-7z-wQO"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-ZO-GTR">
-                                <rect key="frame" x="137.66666666666666" y="189" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="gMa-gi-wbt"/>
-                                    <constraint firstAttribute="width" constant="100" id="thx-np-rCx"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUD-oQ-ZGZ">
-                                <rect key="frame" x="137.66666666666666" y="309" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="1ee-XH-7lJ"/>
-                                    <constraint firstAttribute="width" constant="100" id="h17-ac-6HO"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYQ-uI-1uW">
-                                <rect key="frame" x="112.66666666666669" y="718" width="150" height="40"/>
+                                <rect key="frame" x="85" y="518" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="o2r-iE-Tym"/>
                                     <constraint firstAttribute="height" constant="40" id="vbf-4y-x6j"/>
@@ -69,19 +30,57 @@
                                     <action selector="lightSwitching" destination="BYZ-38-t0r" eventType="touchUpInside" id="3aR-Hd-N6G"/>
                                 </connections>
                             </button>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-03-ygv">
+                                <rect key="frame" x="110" y="10" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tk5-rl-iuw"/>
+                                    <constraint firstAttribute="height" constant="100" id="m3J-J8-ztv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUD-oQ-ZGZ">
+                                <rect key="frame" x="110" y="214" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9hl-t2-xHm"/>
+                                    <constraint firstAttribute="height" constant="100" id="qBz-H1-MTz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbL-ZO-GTR">
+                                <rect key="frame" x="110" y="112" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G6v-h7-flt"/>
+                                    <constraint firstAttribute="height" constant="100" id="hQZ-7R-MgH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IYQ-uI-1uW" secondAttribute="bottom" constant="20" id="1dL-Wd-KC2"/>
-                            <constraint firstItem="NbL-ZO-GTR" firstAttribute="top" secondItem="pfI-03-ygv" secondAttribute="bottom" constant="20" id="Hlu-GB-aA3"/>
-                            <constraint firstItem="pfI-03-ygv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KfH-XN-zs3"/>
-                            <constraint firstItem="sUD-oQ-ZGZ" firstAttribute="top" secondItem="NbL-ZO-GTR" secondAttribute="bottom" constant="20" id="PYV-2o-BYF"/>
-                            <constraint firstItem="IYQ-uI-1uW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sUD-oQ-ZGZ" secondAttribute="bottom" constant="10" id="Uwx-sN-KVF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IYQ-uI-1uW" secondAttribute="bottom" constant="10" id="1dL-Wd-KC2"/>
+                            <constraint firstItem="sUD-oQ-ZGZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IgU-hF-MeV"/>
+                            <constraint firstItem="NbL-ZO-GTR" firstAttribute="top" secondItem="pfI-03-ygv" secondAttribute="bottom" constant="2" id="YSG-8s-fvP"/>
                             <constraint firstItem="IYQ-uI-1uW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yuh-aa-bqg"/>
-                            <constraint firstItem="sUD-oQ-ZGZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aIH-Wf-VJb"/>
-                            <constraint firstItem="NbL-ZO-GTR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g2g-uv-xmj"/>
-                            <constraint firstItem="pfI-03-ygv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="tew-ZA-cJx"/>
+                            <constraint firstItem="NbL-ZO-GTR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ips-Bv-nHE"/>
+                            <constraint firstItem="sUD-oQ-ZGZ" firstAttribute="top" secondItem="NbL-ZO-GTR" secondAttribute="bottom" constant="2" id="r0G-Po-lHb"/>
+                            <constraint firstItem="pfI-03-ygv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vsp-ow-AaL"/>
+                            <constraint firstItem="pfI-03-ygv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="yl2-Yz-cFw"/>
                         </constraints>
                     </view>
                     <connections>
@@ -93,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-279" y="86"/>
+            <point key="canvasLocation" x="-280.37383177570092" y="85.529157667386613"/>
         </scene>
     </scenes>
     <resources>
